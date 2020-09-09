@@ -1,0 +1,10 @@
+{% for block in blocks %}
+<div
+    style="background:url('{{ block.settings.background_block | img_url: 'master' }}'); width:100%; height:400px; display: flex; align-item: center; margin-bottom:10px;">
+    <div style="width: 100%; padding: 142px 40px; font-family: Helvetica," Helvetica Neue",Arial,"Lucida
+        Grande",sans-serif; text-shadow: 0 0 4px rgba(0,0,0,0.4);">
+        <h2 style="text-align:{{ block.settings.position_title_block }}; margin:0; color:white; font-size: 4.33333em;">
+            {{ block.settings.title_block }}</h2>
+    </div>
+</div>
+{% endfor %}
