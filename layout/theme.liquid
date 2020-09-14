@@ -5,6 +5,18 @@
         <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
         <meta content="width=device-width,initial-scale=1" name="viewport"/>
         <meta name="theme-color" content="{{ settings.color_button }}"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- scss -->
+        {{"about-us.scss.css" | asset_url | stylesheet_tag}}
+        {{"abouts-us-content-1.scss.css" | asset_url | stylesheet_tag}}
+        {{"abouts-us-content-text-1.scss.css" | asset_url | stylesheet_tag}}
+        {{"abouts-us-content-2.scss.css" | asset_url | stylesheet_tag}}
+        {{"abouts-us-content-text-2.scss.css" | asset_url | stylesheet_tag}}
+        {{"abouts-us-banner.scss.css" | asset_url | stylesheet_tag}}
+        {{"abouts-us-content-3.scss.css" | asset_url | stylesheet_tag}}
+        {{"button-help.scss.css" | asset_url | stylesheet_tag}}
+        {{"products.scss.css" | asset_url | stylesheet_tag}}
+        {{"breadcrums.scss.css" | asset_url | stylesheet_tag}}
 
         {%- if canonical_url != blank -%}
             <link rel="canonical" href="{{ canonical_url }}"/>

@@ -1,0 +1,40 @@
+<div class="product-item">
+  <div class="product-item-image">
+    <a class="product-link" href="/products/{{ product.handle }}?variant={{ product.id }}">
+      <div class="image-primary">
+        <img src="{{ product.images[0] | product_img_url: 'original' }}" />
+      </div>
+      <div class="image-secondary">
+        <img src="{{ product.images[1] | product_img_url: 'original' }}" />
+      </div>
+    </a>
+
+    <div class="product-item-quickshop">
+      <div class="product-item-options">
+        {% for variant in product.variants %} {% if variant.inventory_quantity > 0 %}
+        <button class="btn-size enabled">
+          <span>{{ variant.title }}</span>
+        </button>
+        {% else %}
+        <button class="btn-size disabled">
+          <span>{{ variant.title }}</span>
+        </button>
+        {% endif %} {% endfor %}
+      </div>
+      <form action="/cart/add" method="post">
+        <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+        <button class="button-add-to-bag" type="submit">ADD TO BAG</button>
+      </form>
+    </div>
+  </div>
+  <a class="product-link" href="/products/{{ product.handle }}?variant={{ product.id }}">
+    <h3 class="product-name">
+      <p>{{ product.title }}</p>
+    </h3>
+    <div class="product-price">
+      <p>{{ product.price | money | remove: ".00" }}</p>
+    </div>
+  </a>
+</div>
+
+<script type="text/javascript" src="{{ 'choose-size-product.js' | asset_url }}"></script>

@@ -1,13 +1,19 @@
-<div class="page-width">
-  <div class="grid">
-    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
-      <div class="section-header text-center">
-        <h1>{{ page.title }}</h1>
-      </div>
+<div>
+    <div>
+        <div>
+            <div class="section-header text-center">
+                <h1>{{ page.title }}</h1>
+            </div>
 
-      <div class="rte">
-        {% section 'banner' %}
-      </div>
+            <div>
+                {% section 'about-us-content-1' %}
+                {% section 'about-us-content-text-1' %}
+                {% section 'about-us-content-2' %}
+                {% section 'about-us-banner' %}
+                {% section 'about-us-content-text-2' %}
+                {% section 'about-us-content-3' %}
+                {% section 'button-help' %}
+            </div>
+        </div>
     </div>
-  </div>
 </div>

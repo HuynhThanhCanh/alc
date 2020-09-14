@@ -1,0 +1,136 @@
+/*============================================================================
+ SECTION ABOUT US CONTENT 2
+ =============================================================================*/
+
+/*
+*===================================================
+* MOBILE                                            
+*===================================================
+*/
+.section-header {
+  display: none;
+}
+
+#content-2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 60px;
+  width: 100%;
+  height: auto;
+  padding: 80px 0px 0px 0px;
+  .thumbnail {
+    padding: 15px;
+  }
+  .detail {
+    padding: 15px;
+    width: 75%;
+    .title {
+      h3 {
+        margin-bottom: 25px;
+        p {
+          font-size: 24px;
+          font-weight: 400;
+          color: rgb(0, 0, 0);
+        }
+      }
+    }
+
+    .content {
+      p {
+        font-family: Futura;
+        letter-spacing: 0.025em;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+      }
+    }
+  }
+}
+
+/*
+*===================================================
+* IPAD                                          
+*===================================================
+*/
+@media (min-width: 768px) {
+  #content-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    .thumbnail {
+      padding: 10px;
+    }
+    .detail {
+      padding: 15px 0;
+      .title {
+        h3 {
+          margin-top: 25%;
+          margin-bottom: 25px;
+          p {
+            font-size: 24px;
+            font-weight: 400;
+            color: rgb(0, 0, 0);
+          }
+        }
+      }
+
+      .content {
+        p {
+          font-family: Futura;
+          letter-spacing: 0.025em;
+          font-size: 18px;
+          font-weight: 400;
+          color: rgb(0, 0, 0);
+        }
+      }
+    }
+  }
+}
+
+/*
+*===================================================
+* DESKTOP                                       
+*===================================================
+*/
+@media (min-width: 1025px) {
+  #content-2 {
+    grid-column-gap: 30px;
+    .thumbnail {
+      padding: 0;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .detail {
+      padding: 0px;
+      .title {
+        padding-left: 0;
+        h3 {
+          margin-top: 25%;
+          margin-bottom: 25px;
+          p {
+            font-size: 24px;
+            font-weight: 400;
+            color: rgb(0, 0, 0);
+          }
+        }
+      }
+
+      .content {
+        padding-left: 0;
+        p {
+          font-family: Futura;
+          letter-spacing: 0.025em;
+          font-size: 18px;
+          font-weight: 400;
+          color: rgb(0, 0, 0);
+        }
+      }
+    }
+  }
+}

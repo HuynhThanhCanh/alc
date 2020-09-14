@@ -12,52 +12,58 @@ blocks: section.blocks
 
 
 {% schema %}
-  {
+
+{
     "name": "Banner",
     "settings": [
-	  {
-        "id": "background",
-        "type": "image_picker",
-        "label": "Image Banner"
-      },
-
-	  {
-		"id": "title",
-        "type": "text",
-        "label": "Title Banner",
-        "default": "Hello world"
-	  },
-
-	  {
-		"id": "position_title",
-        "type": "select",
-        "label": "Position Title",
-		"options": [
-			{ "value": "left", "label": "Left" },
-			{ "value": "right","label": "Right" },
-			{ "value": "center", "label": "Center" }
-		]
-	  },
-
-	  {
-        "id": "content",
-        "type": "textarea",
-        "label": "Content Banner",
-        "default": "Hello world"
-      },
-
-	  {
-		"id": "position_content",
-        "type": "select",
-        "label": "Position Content",
-		"options": [
-			{ "value": "left", "label": "Left" },
-			{ "value": "right","label": "Right" },
-			{ "value": "center", "label": "Center" }
-		]
-	  }
+        {
+            "id": "background",
+            "type": "image_picker",
+            "label": "Image Banner"
+        }, {
+            "id": "title",
+            "type": "text",
+            "label": "Title Banner",
+            "default": "Hello world"
+        }, {
+            "id": "position_title",
+            "type": "select",
+            "label": "Position Title",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                }, {
+                    "value": "right",
+                    "label": "Right"
+                }, {
+                    "value": "center",
+                    "label": "Center"
+                }
+            ]
+        }, {
+            "id": "content",
+            "type": "textarea",
+            "label": "Content Banner",
+            "default": "Hello world"
+        }, {
+            "id": "position_content",
+            "type": "select",
+            "label": "Position Content",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                }, {
+                    "value": "right",
+                    "label": "Right"
+                }, {
+                    "value": "center",
+                    "label": "Center"
+                }
+            ]
+        }
     ],
-
     "blocks": [
         {
             "type": "select",
@@ -67,33 +73,43 @@ blocks: section.blocks
                     "id": "background_block",
                     "type": "image_picker",
                     "label": "Background"
-                },
-                {
+                }, {
                     "id": "title_block",
                     "type": "text",
                     "label": "Title",
                     "default": "Hello world!"
-                },
-                {
+                }, {
                     "id": "position_title_block",
                     "type": "select",
                     "label": "Position Title Block",
                     "options": [
-                        { "value": "left", "label": "Left" },
-                        { "value": "right","label": "Right" },
-                        { "value": "center", "label": "Center" }
+                        {
+                            "value": "left",
+                            "label": "Left"
+                        }, {
+                            "value": "right",
+                            "label": "Right"
+                        }, {
+                            "value": "center",
+                            "label": "Center"
+                        }
                     ]
                 }
             ]
-        }   
+        }
     ]
-  }
+}
 
 {% endschema %}
 
 {% stylesheet %}
+
+
+
 {% endstylesheet %}
 
 {% javascript %}
+
+
 
 {% endjavascript %}

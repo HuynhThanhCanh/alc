@@ -1,0 +1,46 @@
+{%- include "about-us-content-text-1"
+content_text: section.settings.content_text
+position_content_text: section.settings.position_content_text
+-%}
+
+{% schema %}
+
+{
+    "name": "Content Text",
+    "settings": [
+        {
+            "id": "content_text",
+            "type": "richtext",
+            "label": "Content Text",
+            "default": "<p>Default <em>richtext</em> <a href=\"https://example.com/\">content</a></p>"
+        }, {
+            "id": "position_content_text",
+            "type": "select",
+            "label": "Position Content Text",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                }, {
+                    "value": "right",
+                    "label": "Right"
+                }, {
+                    "value": "center",
+                    "label": "Center"
+                }
+            ]
+        }
+    ]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+
+
+
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}

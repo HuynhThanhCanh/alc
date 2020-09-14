@@ -1,0 +1,6 @@
+{% render 'breadcrumbs' %}
+<div class="products">
+    {% for product in collections.all.products %}
+        {% include 'shop' %}
+    {% endfor %}
+</div>

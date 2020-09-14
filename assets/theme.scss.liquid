@@ -14,6 +14,7 @@
   if the parent is another value say 24px write em(12, 24)
   Based on https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/functions/_px-to-em.scss
 ==============================================================================*/
+
 @function em($pxval, $base: $font-size-base) {
   @if not unitless($pxval) {
     $pxval: strip-units($pxval);
@@ -1346,6 +1347,7 @@ html {
 .main-content {
   display: block;
   padding-top: $section-spacing-small;
+  margin: auto;
 
   @include media-query($medium-up) {
     padding-top: $section-spacing;

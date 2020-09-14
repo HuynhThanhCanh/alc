@@ -1,0 +1,75 @@
+{%- include "about-us-content-2"
+thumbnail: section.settings.thumbnail
+title: section.settings.title
+position_title: section.settings.position_title
+content: section.settings.content
+position_content: section.settings.position_content
+-%}
+
+
+{% schema %}
+
+{
+    "name": "Content Grid 2",
+    "settings": [
+        {
+            "id": "thumbnail",
+            "type": "image_picker",
+            "label": "Image"
+        }, {
+            "id": "title",
+            "type": "richtext",
+            "label": "Title",
+            "default": "<p>Default <em>richtext</em> <a href=\"https://example.com/\">content</a></p>"
+        }, {
+            "id": "position_title",
+            "type": "select",
+            "label": "Position Title",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                }, {
+                    "value": "right",
+                    "label": "Right"
+                }, {
+                    "value": "center",
+                    "label": "Center"
+                }
+            ]
+        }, {
+            "id": "content",
+            "type": "richtext",
+            "label": "Content",
+            "default": "<p>Default <em>richtext</em> <a href=\"https://example.com/\">content</a></p>"
+        }, {
+            "id": "position_content",
+            "type": "select",
+            "label": "Position Content",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                }, {
+                    "value": "right",
+                    "label": "Right"
+                }, {
+                    "value": "center",
+                    "label": "Center"
+                }
+            ]
+        }
+    ]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+
+
+
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}
